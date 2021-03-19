@@ -1,0 +1,45 @@
+ul.todo-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.todo-list .tod {
+    display: flex;
+}
+
+ul.todo-list .todo {
+    display: flex;
+    background: #f5f5f5;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    transition: all 0.5s ease;
+}
+
+ul.todo-list .todo li {
+    width: calc(100% - 92px);
+    padding: 10px;
+}
+
+ul.todo-list .todo button {
+    background: var(--bs-red);
+    width: 46px;
+    color: #fff;
+    border: 1px solid var(--bs-red);
+}
+ul.todo-list .todo button i{
+    pointer-events: none;
+}
+
+ul.todo-list .todo button.complete-btn {
+    background: var(--bs-success);
+    border: 1px solid var(--bs-success);
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
